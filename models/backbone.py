@@ -14,6 +14,7 @@ from typing import Dict, List
 from util.misc import NestedTensor, is_main_process
 
 from .position_encoding import build_position_encoding
+from .dla import res2net_dla60
 
 
 class FrozenBatchNorm2d(torch.nn.Module):
