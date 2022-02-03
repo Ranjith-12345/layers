@@ -224,6 +224,7 @@ def res2net50_14w_8s(pretrained=False, **kwargs):
         pretrained (bool): If True, returns a model pre-trained on ImageNet
     """
     model = Res2Net(Bottle2neck, [3, 4, 6, 3], baseWidth = 14, scale = 8, **kwargs)
+    print('hello')
     if pretrained:
         model.load_state_dict(model_zoo.load_url(model_urls['res2net50_14w_8s']))
     return model
